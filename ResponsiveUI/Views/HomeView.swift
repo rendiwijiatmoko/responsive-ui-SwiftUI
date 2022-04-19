@@ -56,7 +56,7 @@ struct HomeView: View {
             
             // MARK: Search bar
             HStack(spacing: 12) {
-                if !prop.isLandscape {
+                if !prop.isLandscape || prop.isSplit{
                     Button {
                         withAnimation {
                             showMenu.toggle()
